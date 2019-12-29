@@ -13,6 +13,13 @@ Pzem R(2, pzemSerial);
 //Pzem S(1, pzemSerial);
 //Pzem T(3, pzemSerial);
 BlynkTimer timer;
+BlynkTimer timer2;
+
+void pzemRead(){
+  R.baca();
+  S.baca();
+  T.baca();
+}
 
 
 void myTimerEvent(){
@@ -58,6 +65,7 @@ void setup() {
   Blynk.begin(auth, ssid, pass);
   pzemSerial.begin(9600);
   timer.setInterval(1000L, myTimerEvent);
+  timer2.setInterval(100L, pzemRead);
 }
 
 void loop() {
