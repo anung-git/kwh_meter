@@ -1,4 +1,4 @@
-<h1> kwh meter digital </h1>
+<h1> KWH METER DIGITAL </h1>
 <h2> nodemcu - blynk </h2>
 
 Monitoring Kwh menggunakan modul pzem-004t-v3 & modul NodeMCU ditampilkan pada dasboard blynk
